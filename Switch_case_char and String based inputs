@@ -1,3 +1,4 @@
+//For String based input program:
 import java.util.Scanner;
 
 public class Switchpro1 
@@ -27,3 +28,39 @@ public class Switchpro1
 	}
 
 }
+*****************************************************************************
+For character based input program:
+import java.util.Scanner;
+
+public class Switchpro1 
+{
+
+	public static void main(String[] args)
+	{
+		//char and String based inputs
+		//A->65
+		//Mercury
+		char ip;
+		String pl;
+		Scanner sd=new Scanner(System.in);
+		System.out.println("enter the character");
+		ip=sd.next().charAt(0);//A
+		//System.out.println("enter the planet name");
+		//pl=sd.nextLine();
+		switch(ip)
+		{
+		case 'A':
+			int res=ip;
+			System.out.println("ASCII value for the character "+ip+"is "+res);
+			break;
+		default:
+			System.out.println("No such character");
+		}
+
+	}
+
+}
+Result:
+enter the character
+A
+ASCII value for the character Ais 65
