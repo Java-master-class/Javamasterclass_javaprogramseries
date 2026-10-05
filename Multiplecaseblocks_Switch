@@ -1,0 +1,60 @@
+1. What are Multiple Case Labels?
+In a switch statement, when multiple values need to execute the same block of statements, we can use multiple case labels.
+This is called:
+Multiple Case Labels with the Same Statement
+
+Basic Syntax
+switch (expression) {
+
+    case value1:
+    case value2:
+    case value3:
+        // Common statements
+        break;
+
+    default:
+        // Default statement
+}
+
+Here, value1, value2, and value3 execute the same statement block.
+*****************************************************************************
+Example:
+//Hidden secrets-Switch case part 1
+import java.util.Scanner;
+public class Multiple_case
+{
+
+	public static void main(String[] args) 
+	{
+	   //aeiou->  a,A 
+
+
+
+char ip;
+Scanner sd=new Scanner(System.in);
+System.out.println("enter the character");
+ip=sd.next().charAt(0);
+switch(ip)
+{
+  case 'A':
+  case 'a':
+	  System.out.println("A or a is a vowel");
+	  break;
+  case 'E':
+  case 'e':
+	   System.out.println("E or e is a vowel");
+	   break;
+  default:
+	  System.out.println("Consonant");
+	  
+}
+	    
+
+	}
+
+}
+*******************************************************************
+Output:
+enter the character
+a
+A or a is a vowel
